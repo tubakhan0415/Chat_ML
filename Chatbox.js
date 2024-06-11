@@ -123,7 +123,7 @@ class Chatbox {
   }
 
   fetchChatResponse(text) {
-    fetch("http://3.110.30.178/predict", {
+    fetch("http://3.110.30.178:5000/predict", {
       method: "POST",
       body: JSON.stringify({ message: text }),
       headers: { "Content-Type": "application/json" },
